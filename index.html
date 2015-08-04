@@ -1,0 +1,43 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>SpeedyGame</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/Boot.js"></script>
+	<script type="text/javascript" src="js/StartMenu.js"></script>
+	<script type="text/javascript" src="js/Preloader.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/GameOver.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+			background: #000;
+        }
+        #gameContainer { width: 640px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<div id="gameContainer"></div>
+
+<script type="text/javascript">
+	window.onload = function() {
+
+        BasicGame = {};
+        BasicGame.gameWidth = 640;
+        BasicGame.gameHeight = 480;
+
+		var game = new Phaser.Game(BasicGame.gameWidth,BasicGame.gameHeight, Phaser.AUTO, 'gameContainer');
+		game.state.add('Boot', EdubookGame.Boot);
+		game.state.add('Preloader', EdubookGame.Preloader);
+		game.state.add('StartMenu', EdubookGame.StartMenu);
+		game.state.add('Game', EdubookGame.Game);
+		game.state.add('GameOver', EdubookGame.GameOver);
+
+		game.state.start('Boot');
+	}
+</script>
+
+</body>
+</html>

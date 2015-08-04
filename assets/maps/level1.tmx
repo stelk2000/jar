@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="90" height="20" tilewidth="32" tileheight="32" nextobjectid="10">
+ <tileset firstgid="1" name="Edubook" tilewidth="32" tileheight="32">
+  <image source="../tilesets/edubook.png" width="256" height="256"/>
+ </tileset>
+ <layer name="backgroundLayer" width="90" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6DOv+k56NkLEhIAAAAAAACac5KNB9qsAFs=
+  </data>
+ </layer>
+ <layer name="blockedLayer" width="90" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzzEKgEAMRcG1UNFOO73/Qc0NhNUYixl4ZeCnNQAAAAD4nzGabprL1gFPLdFaeJ+hZ1P2H1u0F95n6NmU/ccRnYX3GXo2vfHHoE+6ALWdAjs=
+  </data>
+ </layer>
+ <objectgroup name="objectsLayer">
+  <object id="1" gid="4" x="235" y="410" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="2" gid="4" x="746" y="417" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="3" gid="4" x="929" y="292" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="4" gid="4" x="990" y="315" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="5" gid="4" x="1045" y="289" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="6" gid="4" x="1095" y="313" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="7" gid="4" x="1153" y="289" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="8" gid="4" x="1212" y="251" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="9" gid="3" x="1276" y="214" width="32" height="32">
+   <properties>
+    <property name="sprite" value="watch"/>
+    <property name="type" value="time"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
