@@ -10,7 +10,7 @@
  </layer>
  <layer name="blockedLayer" width="90" height="20">
   <data encoding="base64" compression="zlib">
-   eJztzzEKgEAMRcG1UNFOO73/Qc0NhNUYixl4ZeCnNQAAAAD4nzGabprL1gFPLdFaeJ+hZ1P2H1u0F95n6NmU/ccRnYX3GXo2vfHHoE+6ALWdAjs=
+   eJzt17sOgCAQRFEs1Ginnf7/h7qFBSHBKI8F4Z5kCrqBguwa04ZFspYu0YFNspcu0YFDclrnUTLdmYs0aof9lm54WwA+zBk6mDN0uHMGvnmaJZgtACC9N/8u/y3wX7G7Vo27Wkin3PeI3bVq3NVCOuW+R+yuVeOuFtIpxT0GopIL+JUDnQ==
   </data>
  </layer>
  <objectgroup name="objectsLayer">
@@ -56,7 +56,7 @@
     <property name="type" value="star"/>
    </properties>
   </object>
-  <object id="8" gid="4" x="1212" y="251" width="32" height="32">
+  <object id="8" gid="4" x="1198" y="100" width="97" height="92">
    <properties>
     <property name="sprite" value="star"/>
     <property name="type" value="star"/>
