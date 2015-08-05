@@ -10,7 +10,7 @@ EdubookGame.Preloader.prototype = {
 
         this.loadingScreen = this.add.image(0,0, 'loadingScreen');
         this.loadingScreen.anchor.setTo(0, 0);
-        this.loadingScreen.scale.setTo(0.667,0.667);
+        //this.loadingScreen.scale.setTo(0.667,0.667);
 
         this.preloadBar = this.add.sprite(this.world.centerX, this.world.centerY, 'preloaderBar');
         this.preloadBar.anchor.setTo(0.5, 0.5);

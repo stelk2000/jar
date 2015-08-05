@@ -6,7 +6,7 @@ EdubookGame.StartMenu.prototype = {
 
     create: function() {
         this.startScreen = this.add.image(0, 0, 'startScreen');
-        this.startScreen.scale.setTo(0.667,0.667);
+        //this.startScreen.scale.setTo(0.667,0.667);
         this.startScreen.inputEnabled = true;
         this.startScreen.events.onInputDown.addOnce(this.startGame, this);
     },
