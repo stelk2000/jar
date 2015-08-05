@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" nextobjectid="3">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" nextobjectid="22">
  <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
   <image source="timetrip.png" width="160" height="160"/>
  </tileset>
@@ -13,7 +13,126 @@
    eJzt1kEKgDAMBECv3v3/W8VrUbCgS0pmIA9Iu2mzbQAAXPahoBLZ/IYzpIrxz5FLWJdZJkXWSLGnkCZvpMkcaTJX393+s/JdzfTy1PvqZwCV/T1rs/Ns9nO8tb10/GO79Mk7skAHx1CQdAIirwO6
   </data>
  </layer>
- <objectgroup name="objectsLayer" visible="0">
-  <object id="1" gid="7" x="796.121" y="57.2121" width="32" height="32"/>
+ <objectgroup name="objectsLayer">
+  <object id="1" name="star" gid="7" x="796.121" y="57.2121" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="3" name="star" gid="7" x="690.061" y="725.091" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="4" name="star" gid="7" x="580.97" y="797.818" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="5" name="star" gid="7" x="411.273" y="879.636" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="6" name="star" gid="7" x="344.606" y="934.182" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="7" name="star" gid="7" x="193.091" y="994.788" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="8" name="star" gid="7" x="68.8485" y="1037.21" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="9" name="star" gid="7" x="787.03" y="643.273" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="10" name="star" gid="7" x="917.333" y="567.515" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="11" name="star" gid="7" x="1029.45" y="528.121" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="12" name="star" gid="7" x="747.636" y="1028.12" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="13" name="star" gid="7" x="511.273" y="1161.45" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="14" name="star" gid="7" x="835.515" y="1240.24" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="15" name="star" gid="7" x="1132.48" y="1200.85" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="16" name="star" gid="7" x="1299.15" y="1228.12" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="17" name="star" gid="7" x="1438.55" y="1255.39" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="18" name="star" gid="7" x="1526.42" y="1240.24" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="19" name="star" gid="7" x="1908.24" y="1264.48" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="20" name="star" gid="7" x="2226.42" y="1197.82" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
+  <object id="21" name="star" gid="7" x="2323.39" y="1149.33" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+    <property name="type" value="star"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
