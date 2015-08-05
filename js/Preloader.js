@@ -34,7 +34,7 @@ EdubookGame.Preloader.prototype = {
         /*
          * Image sprite resources
          */
-        this.load.spritesheet('edy_green', 'assets/images/edy_green.png', 70, 125);
+        this.load.spritesheet('edy_green', 'assets/images/edy_green.png', 32, 64);
         this.load.spritesheet('moveleftbutton', 'assets/images/button_move_left.png', 121, 123);
         this.load.spritesheet('moverightbutton', 'assets/images/button_move_right.png', 121, 123);
         this.load.spritesheet('moveupbutton', 'assets/images/button_move_up.png', 123, 121);
