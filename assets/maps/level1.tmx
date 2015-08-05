@@ -1,72 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="90" height="20" tilewidth="32" tileheight="32" nextobjectid="10">
- <tileset firstgid="1" name="Edubook" tilewidth="32" tileheight="32">
-  <image source="../tilesets/edubook.png" width="256" height="256"/>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="30" tilewidth="32" tileheight="32" nextobjectid="3">
+ <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
+  <image source="timetrip.png" width="160" height="160"/>
  </tileset>
- <layer name="backgroundLayer" width="90" height="20">
+ <layer name="backgroundLayer" width="80" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwzENAAAMA6DOv+k56NkLEhIAAAAAAACac5KNB9qsAFs=
+   eJzt1ttuwyAMBmC67jKROk2NtPd/0S1qLLmWAWMMmCVI/0XbNOAP5xDCPONbmWu8htbv7K45h7Xg2DP47R439DlV/37cT3g35IYnuzXk11t7/t0EDGN1g53Ez8uA2lquGc9xSxwn7T1Pg/q1WDv1+2Iya+9xftaO1G8jwXaz+OGaYrGqA8+19xqY4czkh+tZjvTwA7uNzAPX8Gx+OTuLOvBecXb4NzD07FfSe5Z+0Ht4Djw3tp3Bbwm8H/2utpacHzX03IOS3mvlR69dbv+892CJn4Vh7N63MGn17LIa9H3ljpLz09YTe0eS+HkyTNmlUloL/I+bk/pJ5vboJ7WLhQ7NXtTOqRnS83Hzr4o1e8rzL48jT4FBziO1T5r1fTCxqBlS819sRw1TfdpjX8Hqk4nWkKu5xJDz0p5rhJvGT9MrGrveftx1KXGT2sXMWvZeL7+cU41bq1rpfY+mV9+V+pXe61J2I2odZah91sb8/osbNaSOFu8oo6+vUY4W73ZXrlxpk1/KjS4y
   </data>
  </layer>
- <layer name="blockedLayer" width="90" height="20">
+ <layer name="blockedLayer" width="80" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt17sOgCAQRFEs1Ginnf7/h7qFBSHBKI8F4Z5kCrqBguwa04ZFspYu0YFNspcu0YFDclrnUTLdmYs0aof9lm54WwA+zBk6mDN0uHMGvnmaJZgtACC9N/8u/y3wX7G7Vo27Wkin3PeI3bVq3NVCOuW+R+yuVeOuFtIpxT0GopIL+JUDnQ==
+   eJzt0cEKgCAQhOEx8NBl3/9xO4RYlhTBokv/BwOCHnZHCQAAAAAAAAAAAJhf7gTPTHtXSbW3craBc0Vgqv3dpdzjynTuLzXJzZvIlmDx8nUeCxavfxm91zHri4yecYYOIudv+3pnA7MhDlw=
   </data>
  </layer>
  <objectgroup name="objectsLayer">
-  <object id="1" gid="4" x="235" y="410" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="2" gid="4" x="746" y="417" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="3" gid="4" x="929" y="292" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="4" gid="4" x="990" y="315" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="5" gid="4" x="1045" y="289" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="6" gid="4" x="1095" y="313" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="7" gid="4" x="1153" y="289" width="32" height="32">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="8" gid="4" x="1198" y="100" width="97" height="92">
-   <properties>
-    <property name="sprite" value="star"/>
-    <property name="type" value="star"/>
-   </properties>
-  </object>
-  <object id="9" gid="3" x="1276" y="214" width="32" height="32">
-   <properties>
-    <property name="sprite" value="watch"/>
-    <property name="type" value="time"/>
-   </properties>
-  </object>
+  <object id="1" gid="7" x="796.121" y="-262.788" width="32" height="32"/>
+  <object id="2" gid="7" x="1274.91" y="-396.121" width="32" height="32"/>
  </objectgroup>
 </map>
