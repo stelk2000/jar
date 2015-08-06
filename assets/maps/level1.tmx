@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" nextobjectid="22">
  <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
-  <image source="timetrip.png" width="160" height="160"/>
+  <image source="timetrip.png" width="320" height="320"/>
  </tileset>
  <layer name="backgroundLayer" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt1ttuwjAMBuAAu2ylTRNIvP+LQjUsGctJHMc5Df+SL8ZKE391S0PweDwej8fj8Xg8Hg/Nr7I8f9H6fbprzmEvOPYT/A6PE/o71f9x3D28G3KZyW4P+f3Wnv8wAcNY32An8Zsl0FvLPeM1TonjpLM3U6hfi71Tvx+mVp09zs/akfrdSGG7VfxwT7Gy6gOvdcwamOFayQ/3s72qhx/Y3cg6cA+v5pezs+gDXyvODv8PDGf2K5k9Sz+YPbwGXhvbruC3Bd6PflbbS86PGs48g5LZa+VH713u+s0+gyV+FoaxZ9/GVKvfLqvQ95ULqpyftp/YO5LEbybDlF2qSnuB73FrUj/J2jP6Se1iRaO5FrVraiI9H7f+rtjzTHV91verrgKDnEfqOmn2d2bKomeomu9iO2qYmtMe1xWsvpjSGnI9lxhyXtpzjXDT+GlmRWPX24+7LyVuUruYWcvZ6+WXc6pxa9Urfe7R6jV3pX6lz7qU3YheRxlqf2tjfv/FjRpSR4t3lNH31yhHi3c7Ly+vNvUA1w0uMg==
   </data>
  </layer>
- <layer name="blockedLayer" width="80" height="40">
+ <layer name="blockedLayer" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1kEKgDAMBECv3v3/W8VrUbCgS0pmIA9Iu2mzbQAAXPahoBLZ/IYzpIrxz5FLWJdZJkXWSLGnkCZvpMkcaTJX393+s/JdzfTy1PvqZwCV/T1rs/Ns9nO8tb10/GO79Mk7skAHx1CQdAIirwO6
   </data>
  </layer>
- <objectgroup name="objectsLayer">
+ <objectgroup name="objectsLayer" visible="0">
   <object id="1" name="star" gid="7" x="796.121" y="57.2121" width="32" height="32">
    <properties>
     <property name="sprite" value="star"/>

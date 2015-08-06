@@ -58,7 +58,7 @@ EdubookGame.Game.prototype = {
         //create watches
         this.createWatches();
 
-        this.world.setBounds(0, 0, 2560, 1280);
+        this.world.setBounds(0, 0, 4096, 1536);
 
         /**
          * Audio FX
