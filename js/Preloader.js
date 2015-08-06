@@ -30,6 +30,7 @@ EdubookGame.Preloader.prototype = {
 
         this.load.image('star', 'assets/images/star.png');
         this.load.image('watch', 'assets/images/watch.png');
+        this.load.image('bullet','assets/images/bullet.png');
         this.load.image('neandertaler', 'assets/images/neandertaler.png');
 
         /*
