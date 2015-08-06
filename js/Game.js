@@ -285,6 +285,7 @@ EdubookGame.Game.prototype = {
         this.physics.arcade.enable(sprite);
         sprite.body.bounce.y = 0.2;
         sprite.body.gravity.y = 1000;
+        //this.game.physics.arcade.moveToObject(sprite, this.player);
     },
 
     bulletOverlapBlocked: function(bullet, blocked) {
