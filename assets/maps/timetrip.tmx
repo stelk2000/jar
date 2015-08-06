@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="5">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="24">
  <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
   <image source="timetrip.png" width="320" height="320"/>
  </tileset>
@@ -10,11 +10,11 @@
  </layer>
  <layer name="blockedLayer" width="128" height="48">
   <data encoding="base64" compression="zlib">
-   eJztWttSAyEMpfrY+tixWv2H1v/x8v9fIUzLiAyBBAIEljOTF3cXkpychN2qlFxctH30dmJiXHo7kMDivy6k828wcg0Y36+OtYoDu+/Fu7+Gf6U5yOXf7hf6W+gatHdr7lpi6X/bmIV/iqY5UNLTKM/WnB92belY+o8jt0a4+a99hlg1wAe3ZqBrkvLdgv/Zz3ouYvxLxEj67/XOh4XvX+7zreMaqQYkQ2J/x2BUv6nA9I/SM9+IORzZdykYOYccvnPOZqnnxZhftflPzeiS/aXmexTMoP2R+fdjaB0HxD/2vNEz5z357x279aEk9pG1b1DyzZwjbgk1kIsZ5uYMMVARqmNuk6iLVNxb4X+n7bG3E0KwRf3vtT31dkIAap+be5/LISz+b4DmgQSOamJU/qm9OnU/5hw0Yy2Myj83lv63jd7fLnrV3+L/hpG/vZSgFf+jvFtxfg+RFCf0nt9L/y37HZbTXv9TylFzqT0gniX2/9J8SNKdRe/z5Uj8L/Bj8b8NUOf8zPxv8bcNKs8z8y8BpgYfAlarLhf/cmC4P2o7BKxWzhf//LAaPimabk1uQ9zPxr/EOWt8etF2Vvm+Wd5dDWNzFdM+dh1/dpwUPEN29+tmz+fAM0dgz713f8ygPM7aQ0L6NbnC1FNM+xj+U/VzIO4H7blHxJLCjPznzu5Qz8hZg/I85v7FPw0xPcV6AEaHKf5ztDy7/kOzEOLAzv7Xu51VfK75a1H15/qH0SEH/34N9uLf5oqDf5/jnHMbxB0FOfnnhN0/55nW/Nt9Ofj3Y6CuabkvAXaWcsUcApX/0vn/pv56ZcxC71Ic/EO9k7Kmm4MSYOc3Zw/w+x41jpIzByXe2LkjxdWnti9t39p+1P/ZC9Wu+17qzvPQXHfXgGCuQbVu18Jq3/cx5F9KS6n4U7qk+lyjX2H5p+S01CT4ING2wn9IN++NfZBoNc6sEvlfFq8B9zty7tzyZ5f/Ddmf978Kn3uh
+   eJztWktywyAMddpl0mWnn7R3SHuffu5/isI0TCmDQAIBEubNaGUbJD09CTvZNrm4GHsf7cTEuIx2IIPFf1tI599Ccw1Y39886xUHdt9LcH8L/2pzUMp/7DnfF8ya1Pu1Yel/35iF/5b9K7VfSW+gPNtyfri1pWPpP43SGuHmv/UZYtUAH/yaga5JyncP/mc/6/lI8S8RmvQ/6p0Pi9C/0ud7x6WpBiRDYn/HQKvfVGD6R+2ZT2MONfsuBZpzyOE752yWel5M+dWa/9yMrtlfar61YAbta+Y/jKF3HBD/2PPGyJyP5H907M6Hmtg1a9+i5ps5R9wSaqAUM8zNGWKgIlbH3CZRF7m498L/wdjtaCeEYI/6Pxq7G+0EM0r6Retz8+hzOYQZ+S8BNA8kcNQSWvnn/o8d5hw0Yy1o5Z8bS//7xuhvF6Pqb/H/C83fXmrQi38t71ac30MkxQm954/Sf89+h+V01H9KOWoutwfEs8T+X5sPSbpzGH2+1MT/Aj8W//sAdc7PzP8ef9ug8jwz/xJga/AmYq3qcvEvB5b7e2OniLXK+eKfH07DjxtNtza3Me5n41/inLU+PRk7b+W+Od59DWNzldI+dp1wdjxu8Aw5XK/bPR8iz9wDex6D+1MG5XHWHhLTr80Vpp5S2sfwn6ufE3E/aM8jIpYcZuS/dHbHekbJGpTnMfcv/mlI6SnVAzA6zPFfouXZ9R+bhRAHbvY/X+28pedauBZVf75/GB1y8B/W4Cj+Xa44+A85Ljm3QdxRUJJ/Trj9S57pzb/bl4P/MAbqmo77GmBnKVfMMVD5r53/L9tfr0xZ7F2Kg3+od1LW9HNQA+z85uwBYd+jxlFz5qDEmzp35Lj6MPZp7MvY9/Z/9kK167+X+vM8Ntf9NSDYa1Ctu7Ww2g99jPmX01Iu/pwuqT636FdY/ik5rTUJPki0vfAf081rZx8kWoszq0T+l6VrwP+OXDq3wtkVfkMO5/0PjZN8Aw==
   </data>
  </layer>
  <objectgroup name="objectsLayer">
-  <object id="1" name="neandertaler" gid="31" x="670.5" y="1267.5" width="32" height="32">
+  <object id="1" name="neandertaler" gid="31" x="663.833" y="1272.17" width="32" height="32">
    <properties>
     <property name="sprite" value="neandertaler"/>
     <property name="type" value="neandertaler"/>
@@ -33,6 +33,120 @@
    </properties>
   </object>
   <object id="4" name="neandertaler" gid="31" x="3526" y="1336.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="5" name="neandertaler" gid="31" x="3195.83" y="1493.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="6" name="neandertaler" gid="31" x="2531.83" y="1398.17" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="7" name="neandertaler" gid="31" x="3034.5" y="1140.83" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="8" name="neandertaler" gid="31" x="2155.83" y="1044.17" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="9" name="neandertaler" gid="31" x="1570.5" y="1114.17" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="10" name="neandertaler" gid="31" x="1218.5" y="1376.17" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="11" name="neandertaler" gid="31" x="935.5" y="1411.83" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="12" name="neandertaler" gid="31" x="3378.5" y="1130.83" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="13" name="neandertaler" gid="31" x="3361.83" y="146.833" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="14" name="neandertaler" gid="31" x="3802.5" y="55.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="15" name="neandertaler" gid="31" x="3413.17" y="504.167" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="16" name="neandertaler" gid="31" x="2540.5" y="421.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="17" name="neandertaler" gid="31" x="1735.17" y="532.167" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="18" name="neandertaler" gid="31" x="2123.17" y="922.167" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="19" name="neandertaler" gid="31" x="1625.83" y="148.167" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="20" name="neandertaler" gid="31" x="834.5" y="86.1667" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="21" name="neandertaler" gid="31" x="64.5" y="503.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="22" name="neandertaler" gid="31" x="495.833" y="922.833" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="23" name="neandertaler" gid="31" x="1203.17" y="604.167" width="32" height="32">
    <properties>
     <property name="sprite" value="neandertaler"/>
     <property name="type" value="neandertaler"/>
