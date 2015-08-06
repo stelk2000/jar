@@ -135,7 +135,7 @@ EdubookGame.Game.prototype = {
         this.timerImage = this.add.image(360, 12, 'watch');
         this.timerImage.fixedToCamera = true;
 
-        this.timer = 90;
+        this.timer = 100;
         this.timerText = this.add.text(400, 16, this.timer.toString() , { fontSize: 20, fill: 'white' });
         this.timerText.fixedToCamera = true;
 
@@ -146,6 +146,7 @@ EdubookGame.Game.prototype = {
         this.scoreText.fixedToCamera = true;
 
         //create countdown
+        /*
         var that = this;
         this.timerInterval = setInterval(function() {
             that.timer--;
@@ -155,6 +156,7 @@ EdubookGame.Game.prototype = {
                 that.gameOver();
             }
         }, 1000);
+        */
 
 
         //  Our controls.
