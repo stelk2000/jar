@@ -11,7 +11,7 @@ EdubookGame.Game = function(game) {
     this.score = 0;
     this.scoreText;
     this.scoreImage;
-    this.timerText;
+    this.healthText;
     this.timerImage;
     this.timerInterval;
     this.sfxStar;
@@ -136,8 +136,8 @@ EdubookGame.Game.prototype = {
         this.timerImage.fixedToCamera = true;
 
         this.health = 100;
-        this.timerText = this.add.text(400, 16, this.health.toString() , { fontSize: 20, fill: 'white' });
-        this.timerText.fixedToCamera = true;
+        this.healthText = this.add.text(400, 16, this.health.toString() , { fontSize: 20, fill: 'white' });
+        this.healthText.fixedToCamera = true;
 
         this.scoreImage = this.add.image(460, 12, 'star');
         this.scoreImage.fixedToCamera = true;
@@ -150,7 +150,7 @@ EdubookGame.Game.prototype = {
         var that = this;
         this.timerInterval = setInterval(function() {
             that.health--;
-            that.timerText.setText(that.health);
+            that.healthText.setText(that.health);
 
             if(!that.health) {
                 that.gameOver();
@@ -169,8 +169,8 @@ EdubookGame.Game.prototype = {
         
         this.physics.arcade.collide(this.stars, this.blockedLayer);
 
-        //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
-        this.physics.arcade.overlap(this.player, this.stars, this.collectStar, null, this);
+        //  Checks to see if the player overlaps with any of the stars, if he does call the collideNeandertaler function
+        this.physics.arcade.overlap(this.player, this.stars, this.collideNeandertaler, null, this);
         this.physics.arcade.overlap(this.player, this.watches, this.collectTime, null, this);
         
         this.physics.arcade.overlap(this.bullets, this.blockedLayer, this.bulletOverlapBlocked, null, this);
@@ -293,21 +293,25 @@ EdubookGame.Game.prototype = {
         bullet.kill();
     },
 
-    collectStar: function(player, collectable) {
-    	// play sound
+    collideNeandertaler: function(player, neandertaler) {
         this.sfxStar.play();
-        // score up
-        this.score += 10;
-        // update scoreboard
-        this.scoreText.text = this.score.toString();
-        // kill star
-        collectable.destroy();
+        
+        this.health -= 1;
+        this.healthText.setText(this.health);
+        
+        //this.scoreText.text = this.score.toString();
+
+        //neandertaler.kill();
+        
+        if (this.health < 1) {
+        	this.state.start('GameOver');
+        }
     },
 
     collectTime: function(player, collectable) {
         this.sfxTime.play();
         this.health += 10;
-        this.timerText.setText(this.health);
+        this.healthText.setText(this.health);
         collectable.destroy();
     }
 }
