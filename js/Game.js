@@ -135,8 +135,8 @@ EdubookGame.Game.prototype = {
         this.timerImage = this.add.image(360, 12, 'watch');
         this.timerImage.fixedToCamera = true;
 
-        this.timer = 100;
-        this.timerText = this.add.text(400, 16, this.timer.toString() , { fontSize: 20, fill: 'white' });
+        this.health = 100;
+        this.timerText = this.add.text(400, 16, this.health.toString() , { fontSize: 20, fill: 'white' });
         this.timerText.fixedToCamera = true;
 
         this.scoreImage = this.add.image(460, 12, 'star');
@@ -149,10 +149,10 @@ EdubookGame.Game.prototype = {
         /*
         var that = this;
         this.timerInterval = setInterval(function() {
-            that.timer--;
-            that.timerText.setText(that.timer);
+            that.health--;
+            that.timerText.setText(that.health);
 
-            if(!that.timer) {
+            if(!that.health) {
                 that.gameOver();
             }
         }, 1000);
@@ -306,8 +306,8 @@ EdubookGame.Game.prototype = {
 
     collectTime: function(player, collectable) {
         this.sfxTime.play();
-        this.timer += 10;
-        this.timerText.setText(this.timer);
+        this.health += 10;
+        this.timerText.setText(this.health);
         collectable.destroy();
     }
 }
