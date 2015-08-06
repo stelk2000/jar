@@ -180,11 +180,13 @@ EdubookGame.Game.prototype = {
             //  Move to the left
             this.player.body.velocity.x = -200;
             this.player.animations.play('left');
+            this.playerDirection = "left";
         }
         else if ((this.cursors.right.isDown || moveRight) && !this.player.isDizzy) {
             //  Move to the right
             this.player.body.velocity.x = 200;
             this.player.animations.play('right');
+            this.playerDirection = "right";
         }
         else if (this.player.isDizzy) {
             this.player.animations.play('dizzy');
@@ -223,10 +225,12 @@ EdubookGame.Game.prototype = {
     fireBullet : function(curTime) {
 		var bullet = this.bullets.getFirstExists(false);
 		if (bullet) {
-			bullet.reset(this.player.x + this.player.width, this.player.y + this.player.height/2);
+			
 			if (this.playerDirection == "right") {
+			bullet.reset(this.player.x + this.player.width, this.player.y + this.player.height/2);
 				bullet.body.velocity.x = this.bulletSpeed;
 			} else {
+			bullet.reset(this.player.x, this.player.y + this.player.height/2);
 				bullet.body.velocity.x = - this.bulletSpeed;
 			}
 		}
