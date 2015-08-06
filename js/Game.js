@@ -17,7 +17,9 @@ EdubookGame.Game = function(game) {
     this.sfxStar;
     this.sfxTime;
     this.sfxStone;
+    
     this.lastBullet = 0;
+    this.bulletSpeed = 300;
 
 }
 
@@ -167,6 +169,8 @@ EdubookGame.Game.prototype = {
         //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
         this.physics.arcade.overlap(this.player, this.stars, this.collectStar, null, this);
         this.physics.arcade.overlap(this.player, this.watches, this.collectTime, null, this);
+        
+        this.physics.arcade.overlap(this.bullets, this.blockedLayer, this.bulletOverlapBlocked, null, this);
 
         //  Reset the players velocity (movement)
         this.player.body.velocity.x = 0;
@@ -193,7 +197,7 @@ EdubookGame.Game.prototype = {
         var curTime = this.game.time.now;
 		if (this.game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
 				if (curTime - this.lastBullet > 300) {
-					//this.fireBullet();
+					this.fireBullet();
 					this.lastBullet = curTime;
 					
 				}
@@ -214,6 +218,14 @@ EdubookGame.Game.prototype = {
     render: function() {
         this.game.debug.text(this.game.time.fps || '--', 2, 14, "#00ff00");
     },
+    
+    fireBullet : function(curTime) {
+		var bullet = this.bullets.getFirstExists(false);
+		if (bullet) {
+			bullet.reset(this.player.x + this.player.width, this.player.y + this.player.height/2);
+			bullet.body.velocity.x = this.bulletSpeed;
+		}
+	},
 
     gameOver: function() {
         clearInterval(this.timerInterval);
@@ -261,6 +273,12 @@ EdubookGame.Game.prototype = {
         this.physics.arcade.enable(sprite);
         sprite.body.bounce.y = 0.2;
         sprite.body.gravity.y = 1000;
+    },
+
+    bulletOverlapBlocked: function(bullet, blocked) {
+    	// play sound
+        //this.sfxStar.play();
+        bullet.kill();
     },
 
     collectStar: function(player, collectable) {
