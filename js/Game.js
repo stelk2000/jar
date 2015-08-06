@@ -17,6 +17,7 @@ EdubookGame.Game = function(game) {
     this.sfxStar;
     this.sfxTime;
     this.sfxStone;
+    this.lastBullet = 0;
 
 }
 
@@ -84,6 +85,16 @@ EdubookGame.Game.prototype = {
 
         // camera settings
         this.camera.follow(this.player);
+        
+        
+        // Bullets
+        this.bullets = this.game.add.group();
+		this.bullets.enableBody = true;
+		this.bullets.physicsBodyType = Phaser.Physics.ARCADE;
+		this.bullets.createMultiple(10,'bullet');			
+    	this.bullets.setAll('outOfBoundsKill', true);
+    	this.bullets.setAll('checkWorldBounds', true);
+    	
 
         // Buttons to move the player on mobile devices
         moveLeftButton = this.game.add.button(20, this.game.height - 60, 'moveleftbutton', null, this, 1, 0, 1, 0);
@@ -178,6 +189,15 @@ EdubookGame.Game.prototype = {
             this.player.animations.stop();
             this.player.frame = 4;
         }
+        
+        var curTime = this.game.time.now;
+		if (this.game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+				if (curTime - this.lastBullet > 300) {
+					//this.fireBullet();
+					this.lastBullet = curTime;
+					
+				}
+			}
 
         // sprite when player is in the air
         /*if (this.cursors.up.isDown || moveUp || !this.player.body.blocked.down) {
