@@ -47,6 +47,7 @@ EdubookGame.Preloader.prototype = {
         this.load.audio('sfxstar', ['assets/audio/coin.ogg', 'assets/audio/coin.mp3']);
         this.load.audio('sfxtime', ['assets/audio/time.ogg', 'assets/audio/time.mp3']);
         this.load.audio('sfxstone', ['assets/audio/stone.ogg', 'assets/audio/stone.mp3']);
+        this.load.audio('bgmusic', ['assets/audio/bgmusic.ogg']);
 
     },
 

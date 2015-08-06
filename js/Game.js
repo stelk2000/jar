@@ -17,6 +17,7 @@ EdubookGame.Game = function(game) {
     this.sfxStar;
     this.sfxTime;
     this.sfxStone;
+    this.sfxMusic;
     
     this.lastBullet = 0;
     this.bulletSpeed = 300;
@@ -70,6 +71,11 @@ EdubookGame.Game.prototype = {
         this.sfxStar = this.add.audio('sfxstar');
         this.sfxTime = this.add.audio('sfxtime');
         this.sfxStone = this.add.audio('sfxstone');
+        this.sfxMusic = this.add.audio("bgmusic");
+        
+        this.sfxMusic.loop = true;
+        this.sfxMusic.volume = 0.3;
+        this.sfxMusic.play();
 
 
         // The player and its settings
