@@ -174,6 +174,7 @@ EdubookGame.Game.prototype = {
         this.physics.arcade.overlap(this.player, this.watches, this.collectTime, null, this);
         
         this.physics.arcade.overlap(this.bullets, this.blockedLayer, this.bulletOverlapBlocked, null, this);
+        this.physics.arcade.overlap(this.bullets, this.stars, this.bulletHitNeandertaler, null, this);
 
         //  Reset the players velocity (movement)
         this.player.body.velocity.x = 0;
@@ -306,6 +307,14 @@ EdubookGame.Game.prototype = {
         if (this.health < 1) {
         	this.state.start('GameOver');
         }
+    },
+    
+    bulletHitNeandertaler: function(bullet, neandertaler) {
+        //this.sfxStar.play();
+        this.score += 1;
+        this.scoreText.text = this.score.toString();
+        neandertaler.kill();
+        bullet.kill();
     },
 
     collectTime: function(player, collectable) {
