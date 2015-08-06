@@ -26,7 +26,58 @@
          "draworder":"topdown",
          "height":0,
          "name":"objectsLayer",
-         "objects":[],
+         "objects":[
+                {
+                 "gid":31,
+                 "height":32,
+                 "id":1,
+                 "name":"neandertaler",
+                 "properties":
+                    {
+                     "sprite":"neandertaler",
+                     "type":"neandertaler"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":312,
+                 "y":1276
+                }, 
+                {
+                 "gid":31,
+                 "height":32,
+                 "id":10,
+                 "name":"neandertaler",
+                 "properties":
+                    {
+                     "sprite":"neandertaler",
+                     "type":"neandertaler"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":393,
+                 "y":1253
+                }, 
+                {
+                 "gid":31,
+                 "height":32,
+                 "id":11,
+                 "name":"neandertaler",
+                 "properties":
+                    {
+                     "sprite":"neandertaler",
+                     "type":"neandertaler"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":591,
+                 "y":1237
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -34,7 +85,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":1,
+ "nextobjectid":12,
  "orientation":"orthogonal",
  "properties":
     {

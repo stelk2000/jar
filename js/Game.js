@@ -150,6 +150,8 @@ EdubookGame.Game.prototype = {
     update: function() {
 
         this.physics.arcade.collide(this.player, this.blockedLayer);
+        
+        this.physics.arcade.collide(this.stars, this.blockedLayer);
 
         //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
         this.physics.arcade.overlap(this.player, this.stars, this.collectStar, null, this);
@@ -214,7 +216,7 @@ EdubookGame.Game.prototype = {
     createStars: function() {
         this.stars = this.game.add.group();
         this.stars.enableBody = true;
-        var result = this.findObjectsByType('star', this.map, 'objectsLayer');
+        var result = this.findObjectsByType('neandertaler', this.map, 'objectsLayer');
         result.forEach(function(element){
             this.createFromTiledObject(element, this.stars);
         }, this);
@@ -236,12 +238,19 @@ EdubookGame.Game.prototype = {
         Object.keys(element.properties).forEach(function(key){
             sprite[key] = element.properties[key];
         });
+        this.physics.arcade.enable(sprite);
+        sprite.body.bounce.y = 0.2;
+        sprite.body.gravity.y = 1000;
     },
 
     collectStar: function(player, collectable) {
+    	// play sound
         this.sfxStar.play();
+        // score up
         this.score += 10;
+        // update scoreboard
         this.scoreText.text = this.score.toString();
+        // kill star
         collectable.destroy();
     },
 

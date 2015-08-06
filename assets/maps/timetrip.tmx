@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="12">
  <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
   <image source="timetrip.png" width="320" height="320"/>
  </tileset>
- <layer name="backgroundLayer" width="128" height="48" visible="0">
+ <layer name="backgroundLayer" width="128" height="48">
   <data encoding="base64" compression="zlib">
    eJzt17tOw0AQBdA0QAn8R2o6nk1EQheg4/H/X8EgubAigiLW2fGy50i3s7yW73qsXSwAAAAAAAAAAAAAgB4tRzn0Wv6PZUFo17jDv/RsH7Sp5Hs3C9pW0qvO2+Zb79ux5r69MX+1urcP6sjoU+az169kVqntZsi1pGT3/dd2O2Q1hLq+3/1d5D7ykLS+/vM8RtaRTeQpYX3959pGniMvkdeE9fWf6y3yHvmIfCasr/++1e7/PHIx5LLCevxO/30z//tW2v9J5HQnZ5M9HcdWev4cz/OSuf7Tfab4R+y7775M8ewt/ddKz5/6b7v/7PMnAFDfFy3EbkM=
   </data>
@@ -13,5 +13,24 @@
    eJzt10tOAzEMgOEMCFjQLhEF7oK67potiPufglRqJGPsjBOBUtL/k7zqNC+Pk0xKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeB09gAu05Lgy4nrAWPYD+rxkx9w/5NgYsR0wnsOAPmdQaniX2ur2Ptm5H5X/twF9jiL33d69trQhaziat1rtR9vRZ8cu+WfIYvwu4z3HR3DsM7jJcXuKu842rPp9TLH3qVb7kfwvK//fNPZX+y9+6j27rT2jp421/G3V82v9kf82tXqq7QHROqzlP9KG/v/s9W+dhV4Ojs8+5Xg+xYt41voe021F6kmvf7Tufyv/+h2cIf86Nz33Ni93Zb3lvUCGvCP0rL/Xrhe1O0npX78juo/WMZ97/vUcWr+RanUbvbe1nKV/9Q3n5d/z389/b+9sWd+ePdvSUkfRdyoydrnvlXlE599a+yPyL+f4mb6fvbWaLc/J81ye63rN1vJltSPbaq2jMkavXS9Kf9H5W330jvnc6h8AMK8v8dYZAg==
   </data>
  </layer>
- <objectgroup name="objectsLayer" visible="0"/>
+ <objectgroup name="objectsLayer">
+  <object id="1" name="neandertaler" gid="31" x="312" y="1276" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="10" name="neandertaler" gid="31" x="393" y="1253" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="11" name="neandertaler" gid="31" x="591" y="1237" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
