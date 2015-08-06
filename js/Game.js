@@ -20,6 +20,7 @@ EdubookGame.Game = function(game) {
     
     this.lastBullet = 0;
     this.bulletSpeed = 300;
+    this.playerDirection = "right";
 
 }
 
@@ -223,7 +224,11 @@ EdubookGame.Game.prototype = {
 		var bullet = this.bullets.getFirstExists(false);
 		if (bullet) {
 			bullet.reset(this.player.x + this.player.width, this.player.y + this.player.height/2);
-			bullet.body.velocity.x = this.bulletSpeed;
+			if (this.playerDirection == "right") {
+				bullet.body.velocity.x = this.bulletSpeed;
+			} else {
+				bullet.body.velocity.x = - this.bulletSpeed;
+			}
 		}
 	},
 
@@ -278,6 +283,7 @@ EdubookGame.Game.prototype = {
     bulletOverlapBlocked: function(bullet, blocked) {
     	// play sound
         //this.sfxStar.play();
+        
         bullet.kill();
     },
 
