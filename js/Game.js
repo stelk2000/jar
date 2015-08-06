@@ -73,9 +73,9 @@ EdubookGame.Game.prototype = {
         this.sfxStone = this.add.audio('sfxstone');
         this.sfxMusic = this.add.audio("bgmusic");
         
-        this.sfxMusic.loop = true;
-        this.sfxMusic.volume = 0.3;
-        this.sfxMusic.play();
+        //this.sfxMusic.loop = true;
+        //this.sfxMusic.volume = 0.3;
+        //this.sfxMusic.play();
 
 
         // The player and its settings
