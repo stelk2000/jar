@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="48" tilewidth="32" tileheight="32" nextobjectid="5">
  <tileset firstgid="1" name="timetrip" tilewidth="32" tileheight="32">
   <image source="timetrip.png" width="320" height="320"/>
  </tileset>
  <layer name="backgroundLayer" width="128" height="48">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="blockedLayer" width="128" height="48">
@@ -13,5 +13,30 @@
    eJztWttSAyEMpfrY+tixWv2H1v/x8v9fIUzLiAyBBAIEljOTF3cXkpychN2qlFxctH30dmJiXHo7kMDivy6k828wcg0Y36+OtYoDu+/Fu7+Gf6U5yOXf7hf6W+gatHdr7lpi6X/bmIV/iqY5UNLTKM/WnB92belY+o8jt0a4+a99hlg1wAe3ZqBrkvLdgv/Zz3ouYvxLxEj67/XOh4XvX+7zreMaqQYkQ2J/x2BUv6nA9I/SM9+IORzZdykYOYccvnPOZqnnxZhftflPzeiS/aXmexTMoP2R+fdjaB0HxD/2vNEz5z357x279aEk9pG1b1DyzZwjbgk1kIsZ5uYMMVARqmNuk6iLVNxb4X+n7bG3E0KwRf3vtT31dkIAap+be5/LISz+b4DmgQSOamJU/qm9OnU/5hw0Yy2Myj83lv63jd7fLnrV3+L/hpG/vZSgFf+jvFtxfg+RFCf0nt9L/y37HZbTXv9TylFzqT0gniX2/9J8SNKdRe/z5Uj8L/Bj8b8NUOf8zPxv8bcNKs8z8y8BpgYfAlarLhf/cmC4P2o7BKxWzhf//LAaPimabk1uQ9zPxr/EOWt8etF2Vvm+Wd5dDWNzFdM+dh1/dpwUPEN29+tmz+fAM0dgz713f8ygPM7aQ0L6NbnC1FNM+xj+U/VzIO4H7blHxJLCjPznzu5Qz8hZg/I85v7FPw0xPcV6AEaHKf5ztDy7/kOzEOLAzv7Xu51VfK75a1H15/qH0SEH/34N9uLf5oqDf5/jnHMbxB0FOfnnhN0/55nW/Nt9Ofj3Y6CuabkvAXaWcsUcApX/0vn/pv56ZcxC71Ic/EO9k7Kmm4MSYOc3Zw/w+x41jpIzByXe2LkjxdWnti9t39p+1P/ZC9Wu+17qzvPQXHfXgGCuQbVu18Jq3/cx5F9KS6n4U7qk+lyjX2H5p+S01CT4ING2wn9IN++NfZBoNc6sEvlfFq8B9zty7tzyZ5f/Ddmf978Kn3uh
   </data>
  </layer>
- <objectgroup name="objectsLayer"/>
+ <objectgroup name="objectsLayer">
+  <object id="1" name="neandertaler" gid="31" x="670.5" y="1267.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="2" name="neandertaler" gid="31" x="1806" y="1396.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="3" name="neandertaler" gid="31" x="2645.5" y="1140.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+  <object id="4" name="neandertaler" gid="31" x="3526" y="1336.5" width="32" height="32">
+   <properties>
+    <property name="sprite" value="neandertaler"/>
+    <property name="type" value="neandertaler"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
